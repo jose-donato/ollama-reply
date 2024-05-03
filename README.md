@@ -1,4 +1,4 @@
-# ollama-Reply
+# ollama-reply
 
 > **Disclaimer**: While I generally do not advocate for the use of automated tools for social media interactions, as they can reduce genuine human engagement, I wanted to build ollama-reply as an experiment. It was an opportunity to explore the capabilities of Ollama and dive into browser extensions.
 
