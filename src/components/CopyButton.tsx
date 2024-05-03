@@ -20,7 +20,9 @@ export default function CopyButton({ response }: { response: string }) {
 						size="icon"
 						onClick={() => {
 							setIsCopied(true);
-							navigator.clipboard.writeText(response);
+							navigator.clipboard.writeText(
+								response.trim().replace(/^"|"$/g, ""),
+							);
 							setTimeout(() => {
 								setIsCopied(false);
 							}, 2000);

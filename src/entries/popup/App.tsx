@@ -23,7 +23,7 @@ function App() {
 					<Tooltip>
 						<TooltipTrigger asChild>
 							<a
-								href="https://github.com/josedonato/ollama-reply"
+								href="https://github.com/jose-donato/ollama-reply"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -96,7 +96,7 @@ function App() {
 				</a>
 				. Code open source on{" "}
 				<a
-					href="https://github.com/josedonato/ollama-reply"
+					href="https://github.com/jose-donato/ollama-reply"
 					target="_blank"
 					rel="noreferrer"
 					className="underline hover:text-white"
