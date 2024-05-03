@@ -1,0 +1,53 @@
+{
+  "author": "jose-donato",
+  "description": "open-source browser extension that leverages the power of the AI to generate engaging replies for social media growth.",
+  "name": "ollama-reply",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "32": "icons/icon.png",
+      "38": "icons/icon.png"
+    },
+    "default_popup": "src/entries/popup/index.html"
+  },
+  "background": {
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/entries/contentScript/primary/main.js"
+      ],
+      "matches": [
+        "https://twitter.com/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "icons": {
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/src/entries/contentScript/primary/main-GPJDZC7B.js",
+        "assets/client-Cak328OE.js",
+        "assets/browser-polyfill-CDoadmtY.js"
+      ],
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "use_dynamic_url": true
+    }
+  ]
+}

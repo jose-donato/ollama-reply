@@ -1,0 +1,44 @@
+{
+	"name": "ollama-reply",
+	"version": "1.0.0",
+	"displayName": "ollama-reply",
+	"author": "jose-donato",
+	"description": "open-source browser extension that leverages the power of the AI to generate engaging replies for social media growth.",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"watch": "vite build --watch --mode development --minify false",
+		"dev": "vite",
+		"serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./dist/",
+		"serve:chrome": "web-ext run -t chromium --start-url \"https://example.com\" --source-dir ./dist/"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@samrum/vite-plugin-web-extension": "^5.0.0",
+		"@types/chrome": "^0.0.254",
+		"@types/node": "^20.12.8",
+		"@types/react": "^18.2.37",
+		"@types/react-dom": "^18.2.15",
+		"@types/webextension-polyfill": "^0.10.6",
+		"@vitejs/plugin-react": "^4.2.0",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
+		"tailwindcss": "^3.4.3",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.0",
+		"web-ext": "^7.8.0"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
+		"@radix-ui/react-tooltip": "^1.0.7",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.377.0",
+		"next-themes": "^0.3.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwind-merge": "^2.3.0",
+		"tailwindcss-animate": "^1.0.7",
+		"webextension-polyfill": "^0.10.0"
+	}
+}
